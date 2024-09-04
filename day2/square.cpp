@@ -17,11 +17,14 @@ void display() {
     glFlush();
 }
 
-void reshape(int w, int h) {
+void resize(int w, int h) {
     glViewport(0, 0, w, h);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluOrtho2D(-1, 1, -1, 1);
+    // glOrtho(0.0, 200.0, 0.0, 200.0, -1.0, 1.0); // (a)
+    // glOrtho(20.0, 80.0, 20.0, 80.0, -1.0, 1.0); // (b)
+    // glOrtho(0.0, 100.0, 0.0, 100.0, -2.0, 5.0); // (c)
+    glOrtho(0.0, 100.0, 0.0, 100.0, -1.0, 1.0);
     glMatrixMode(GL_MODELVIEW);
 }
 
@@ -30,7 +33,7 @@ int main(int argc, char** argv) {
     glutInitWindowSize(300, 300);
     glutCreateWindow("Square");
     glutDisplayFunc(display);
-    glutReshapeFunc(reshape);
+    glutReshapeFunc(resize);
     glutMainLoop();
     return 0;
 }
