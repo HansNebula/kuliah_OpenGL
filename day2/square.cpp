@@ -7,7 +7,7 @@ void display() {
     glColor3f(0.0f, 0.0f, 0.0f);
 
     
-    glBegin(GL_QUADS);
+    glBegin(GL_POLYGON);
         glVertex2f(-0.5f, -0.5f);
         glVertex2f(0.5f, -0.5f);
         glVertex2f(0.5f, 0.5f);
@@ -30,7 +30,11 @@ void resize(int w, int h) {
 
 int main(int argc, char** argv) {
     glutInit(&argc, argv);
-    glutInitWindowSize(300, 300);
+    
+    // glutInitWindowPosition(100, 100);  // Posisi awal
+    glutInitWindowPosition(0, 0);    // Uji dengan posisi lain
+    // glutInitWindowPosition(300, 300);
+    
     glutCreateWindow("Square");
     glutDisplayFunc(display);
     glutReshapeFunc(resize);
