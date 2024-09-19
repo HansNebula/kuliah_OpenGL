@@ -22,9 +22,13 @@ void drawScene(void)
     // glTranslatef(0.0, 0.0, -10.0);
     // glTranslatef(0.0, 0.0, -5.0);
     // glTranslatef(0.0, 0.0, -25.0);
-    glTranslatef(10.0, 10.0, -15.0);
+    // glTranslatef(10.0, 10.0, -15.0);
 
-    glutWireCube(5.0);
+    // glutWireCube(5.0);
+
+    glTranslatef(0.0, 0.0, -15.0);
+    glScalef(1.0, 1.0, 1.0);
+    glutWireTeapot(5.0); 
 
     glFlush();
     glutSwapBuffers();
