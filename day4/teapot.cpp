@@ -2,17 +2,6 @@
 #include <GL/glew.h>
 #include <GL/freeglut.h>
 
-
-    // Move the object into the view (Z axis back).
-    // glTranslatef(0.0, 0.0, -15.0);
-
-    // glTranslatef(0.0, 0.0, -10.0);
-    // glTranslatef(0.0, 0.0, -5.0);
-    // glTranslatef(0.0, 0.0, -25.0);
-    // glTranslatef(10.0, 10.0, -15.0);
-
-// Drawing routine.
-
 void drawScene(void)
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -20,8 +9,8 @@ void drawScene(void)
     glLoadIdentity();
 
     glTranslatef(0.0, 0.0, -15.0);
-    glScalef(1.0, 1.0, 1.0);
-    glutWireTeapot(5.0); 
+    glRotatef(60.0, 1.0, 0.0, 1.0);
+    glutWireTeapot(4.0);
 
     glFlush();
     glutSwapBuffers();
@@ -67,7 +56,7 @@ int main(int argc, char **argv)
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
     glutInitWindowSize(500, 500);
     glutInitWindowPosition(100, 100);
-    glutCreateWindow("Wireframe Cube");
+    glutCreateWindow("teapot");
 
     glewExperimental = GL_TRUE;
     glewInit();
