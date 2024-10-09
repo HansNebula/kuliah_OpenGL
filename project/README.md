@@ -105,4 +105,5 @@ Bagian ini memungkinkan pengguna untuk memutar kubus dengan menggunakan tombol p
 
 ## Hasil
 ![Output Program](hasil.png)
+### Contoh penggunaan keyboard untuk rotasi objek
 ![GIF Fitur Keyboard](hasil.gif)
