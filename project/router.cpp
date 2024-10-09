@@ -243,7 +243,7 @@ int main(int argc, char** argv) {
     glutInit(&argc, argv); // Inisialisasi GLUT
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH); // Set display mode (buffer ganda, RGB, depth)
     glutInitWindowSize(500, 500); // Set ukuran jendela
-    glutCreateWindow("3D Modified Cube with Lighting"); // Membuat jendela dengan judul
+    glutCreateWindow("3D Router WCG"); // Membuat jendela dengan judul
 
     init(); // Inisialisasi OpenGL
 
