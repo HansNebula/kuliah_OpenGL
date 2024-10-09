@@ -1,16 +1,14 @@
-
-
-# README: 3D Kubus Termodifikasi dengan Pencahayaan Menggunakan OpenGL
-
+# Router 3D Project 1 Workshop Computer Graphic
 
 ## Hatfan Sahrul Ramadhan (5223600004)
 ## Toriq Mardlatillah (5223600012)
 
+
 ## Fitur Utama:
 <!-- - **Pencahayaan 3D**: Program ini menggunakan pencahayaan `GL_LIGHT0` untuk menambah efek cahaya pada kubus. -->
 - **Interaksi Keyboard**: Pengguna dapat memutar objek dengan tombol panah atas, bawah, kiri, dan kanan.
-- **Dua Kubus**: Terdapat kubus besar dan kubus kecil yang berada di atas kubus besar.
-- **Efek LED**: Sebuah persegi kecil berwarna biru menyerupai LED berada di atas kubus kecil.
+- **Replika Router**: Terdapat kubus besar dan kubus kecil yang berada di atas kubus besar.
+<!-- - **Efek LED**: Sebuah persegi kecil berwarna biru menyerupai LED berada di atas kubus kecil. -->
 - **Rotasi Objek**: Objek dapat diputar di sepanjang sumbu X dan Y.
 
 
@@ -105,3 +103,5 @@ void keyboard(int key, int x, int y) {
 ```
 Bagian ini memungkinkan pengguna untuk memutar kubus dengan menggunakan tombol panah pada keyboard. **GLUT_KEY_UP**, **GLUT_KEY_DOWN**, **GLUT_KEY_LEFT**, dan **GLUT_KEY_RIGHT** digunakan untuk mengatur rotasi pada sumbu X dan Y.
 
+## Hasil
+![Output Program](hasil.png)![](hasil.gif)
