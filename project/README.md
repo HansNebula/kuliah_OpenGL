@@ -15,11 +15,11 @@
 ## Cara Menjalankan
 1. **Kompilasi program** dengan perintah berikut:
    ```bash
-   g++ -o cube_program cube_program.cpp -lGL -lGLU -lglut
+   g++ router.cpp -o router -lGL -lGLU -lglut
    ```
 2. **Jalankan program**:
    ```bash
-   ./cube_program
+   ./router
    ```
 
 ## Penjelasan Kode
