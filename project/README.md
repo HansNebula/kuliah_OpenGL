@@ -104,4 +104,5 @@ void keyboard(int key, int x, int y) {
 Bagian ini memungkinkan pengguna untuk memutar kubus dengan menggunakan tombol panah pada keyboard. **GLUT_KEY_UP**, **GLUT_KEY_DOWN**, **GLUT_KEY_LEFT**, dan **GLUT_KEY_RIGHT** digunakan untuk mengatur rotasi pada sumbu X dan Y.
 
 ## Hasil
-![Output Program](hasil.png)![](hasil.gif)
+![Output Program](hasil.png)
+![GIF Fitur Keyboard](hasil.gif)
